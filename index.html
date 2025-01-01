@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Painel de Senhas</h1>
+    <div class="display">
+      <div class="pedido">
+        <h2>Pedido</h2>
+        <div id="senhaAtual">---</div>
+      </div>
+      <div class="chamados">
+        <h2>Chamados</h2>
+        <ul id="listaChamados"></ul>
+      </div>
+    </div>
+    <div class="teclado">
+      <div class="row">
+        <button onclick="digitar('1')">1</button>
+        <button onclick="digitar('2')">2</button>
+        <button onclick="digitar('3')">3</button>
+      </div>
+      <div class="row">
+        <button onclick="digitar('4')">4</button>
+        <button onclick="digitar('5')">5</button>
+        <button onclick="digitar('6')">6</button>
+      </div>
+      <div class="row">
+        <button onclick="digitar('7')">7</button>
+        <button onclick="digitar('8')">8</button>
+        <button onclick="digitar('9')">9</button>
+      </div>
+      <div class="row">
+        <button onclick="limpar()">Limpar</button>
+        <button onclick="digitar('0')">0</button>
+        <button onclick="chamar()">Chamar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Elemento de áudio -->
+  <audio id="audioChamada" src="senha (1).mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
